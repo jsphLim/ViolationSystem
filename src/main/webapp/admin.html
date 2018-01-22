@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/controll.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/searchJS.js"></script>
+<script src="js/loginJS.js"></script>
+
+<style>
+    .panel{width:60%;margin:0 auto;text-align: center;}
+    .form-inline{width:60%;margin:0 auto;}
+    * { margin: 0; padding: 0;}
+    ul, ol { list-style-type: none;}
+    body { background-color: #eee;}
+    .wrap { width: 700px; margin: 50px auto 0;}
+    .jq22 { margin: -20px auto 0; padding: 20px; background-color: #fff;}
+    .jq22 li { margin-top: 20px; vertical-align: middle; font-size: 0;}
+    .jq22 > li:first-child { margin-top: 0;}
+    .jq22 li * { font-size: 14px;}
+    .jq22 li li { margin-top: 0;}
+    .jq22 label { display: inline-block; margin: 0 0px 0 5px; vertical-align: top;color: black;}
+    .jq22 .label { display: inline-block; width: 70px; margin: 0; padding-right: 10px; font-size: 14px; text-align: right; vertical-align: middle;}
+    .cform-radio, .cform-checkbox { display: inline-block; vertical-align: middle;}
+    .cform-text, .cform-select, .cform-file { display: inline-block; vertical-align: middle; font-size: 16px;}
+    .cform-select { width: 120px; z-index: 10;}
+    .cform-file .cform-filename { width: 460px; font-size: 12px;}
+    .cform-submit { margin-left: 80px;}
+    .cform-file .cform-control { text-align: left;}
+    textarea { width: 580px; height: 100px;}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>违章管理系统</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">违章管理系统</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--<li><a href="#">Link</a></li>-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="UserID">
+                        <script type="text/javascript">
+                            $(function() {
+                                $.ajax({
+                                    url: "online",
+                                    type: "GET",
+                                    success: function(response) {
+                                        if(response!=null) {
+                                            $("#UserID").append(response.toString()
+                                                + '<b class="caret"></b>');
+                                        }
+                                    },
+                                    error: function(xhr, msg, e) {
+                                        // alert("error!");
+                                    }
+                                });
+                            });
+                        </script>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="UpdatePwd.html">修改密码</a></li>
+                        <li><a href="index.html" onclick="logout()">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-form navbar-left">
+                <button type="submit" class="btn btn-default" id="search_bt" onclick="tomain()">Search</button>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="wrap">
+    <form>
+        <ul class="jq22">
+            <li>
+                <label class="label" for="username">姓名：</label>
+                <input type="text" name="username" id="username" >
+            </li>
+            <li>
+                <label class="label" for="ID">身份证：</label>
+                <input type="text" name="ID" id="ID"></li>
+            <li>
+                <span class="label">性别：</span>
+                <input type="radio" name="sex" id="male" value="男"><label>男</label> <input type="radio" name="sex" id="female" value="女"><label>女</label>
+            </li>
+            <li>
+                <label class="label" for="violate">违章记录：</label>
+                <textarea name="violate" id="violate"></textarea>
+            </li>
+            <li>
+                <label class="label" for="lowpoint">违章扣分：</label>
+                <select name="lowpoint" id="lowpoint">
+                    <option value="">选择</option>
+                    <option value="1">2</option>
+                    <option value="2">4</option>
+                    <option value="3">6</option>
+                    <option value="4">8</option>
+                    <option value="4">10</option>
+                    <option value="4">12</option>
+                </select>
+            </li>
+            <li><input class="send" type="submit" style="margin-left: 220px;" value="提交" onclick="addMsg_submit()"></li>
+        </ul>
+    </form>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.cform.min.js"></script>
+<script>
+    $(function(){
+        $('.jq22').cForm();
+    });
+</script>
+
+
+
+</body>
+
+</html>

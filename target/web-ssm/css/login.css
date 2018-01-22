@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+::-ms-clear{display: none;}
+::-ms-reveal{display: none;}
+body {
+    font-family: 微软雅黑　;
+    width: 100%;
+    height: 100%;
+}
+
+.login-area {
+    margin: 0 auto;
+    width: 430px;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.login-area .common {
+    font-family: 微软雅黑　;
+    position: relative;
+
+}
+
+.login-area .input {
+    top: 100px;
+    height: 35px;
+    width: 70%;
+    padding: 5px 5px 5px 10px;
+    margin: 0 12%;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+}
+.login-area .input_on{
+    border-color:#00BBFF;
+}
+
+
+.login-area .psw-height {
+    top: 110px;
+}
+
+.login-area .login-btn {
+    top: 170px;
+    left: 60px;
+    background: #3090e7;
+    border: none;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.login-area .title {
+    font-family: 微软雅黑　;
+    color: #3090e7;
+    position: relative;
+    top: 70px;
+    font-size: 1.4em;
+    width: 100%;
+    text-align: center;
+}
+
+.login-area .title span {
+    border-bottom: 1px solid #3090e7;
+    width: 40px;
+    height: 0;
+    display: inline-block;
+    margin: 0 10px 5px;
+}
+
+#jianpan {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 5px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    width: 45%;
+    height: 30%;
+    display: none;
+    overflow:hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#jianpan .title {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #dcdddd;
+    padding: 0;
+    cursor: move;
+    font-size:1em;
+}
+#jianpan .jianpan_hide{
+    width: 40px;
+    float: right;
+}
+
+#xfjp {
+    width: 100%;
+    height: 80%;
+}
+#shift{
+    font-size:0.8em;
+}
+.jianpan {
+    color: #dcdddd;
+}
+
+.jianpan td {
+    color: #333333;
+    width: 10%;
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 1px solid #dcdddd;
+    border-left: 1px solid #dcdddd;
+}
+
+.jianpan tr td:first-child {
+    border-left: none;
+}
+
+.jianpan tr:last-child td {
+    border-bottom: none;
+}
+
+.jianpan td:active {
+    /*background: #efeff0;*/
+    -moz-box-shadow:0px 0px 10px #AAAAAA inset;
+    -webkit-box-shadow:0px 0px 10px #AAAAAA inset;
+    box-shadow:0px 0px 10px #AAAAAA inset;
+}

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>机动车违章记录查询系统</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/searchJS.js"></script>
+</head>
+<body>
+<div class="login-area" id="searchPanel">
+    <div class="title" >
+        <span></span>机动车违章记录查询<span></span>
+    </div>
+    <label for="name">
+        <input id="name" type="text" placeholder="姓名" class="common input" style="margin-left: 70px;"  >
+        <input id="ID" type="text" placeholder="身份证" class="common input psw-height" style="margin-left: 70px;">
+    </label>
+    <button class="common login-btn" onclick="search()" style="margin-left: 10px;">
+        一键查询
+    </button>
+</div>
+
+<div id="mainPanel" class="panel panel-default" hidden>
+    <div class="panel-heading">
+
+    </div>
+    <table class="table" id="postTable">
+        <tr style="font-weight: bold"><td>姓名</td><td>违规内容</td><td>扣分数</td><td>登记人员</td></tr>
+
+    </table>
+</div>
+
+
+</body>
+</html>

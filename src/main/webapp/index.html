@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/loginJS.js"></script>
+    <title>管理员系统</title>
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+</head>
+<body>
+<div class="container">
+    <!-- Codrops top bar -->
+    <header>
+        <h1>违章记录查询系统</h1>
+
+    </header>
+    <section>
+        <div id="container_demo" >
+            <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form  >
+                        <h1 style="font-size: 30px;">管理员登录</h1>
+                        <p>
+                            <label for="username" class="uname" > username </label>
+                            <input id="username" name="username" required="required" type="text" placeholder="输入警员识别码"/>
+                        </p>
+                        <p>
+                            <label for="password" class="youpasswd"> password </label>
+                            <input id="password" name="password" required="required" type="password" placeholder="输入密码" />
+                        </p>
+                        <p class="keeplogin">
+                            <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                            <label for="loginkeeping">Keep me logged in</label>
+                        </p>
+                        <p class="login button">
+                            <input type="submit" id="loginBt" value="Login" onclick="c_o_li_submit()" />
+                        </p>
+                        <p class="change_link">
+                            Not a member yet ?
+                            <a href="#toregister" class="to_register">Join us</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div id="register" class="animate form">
+                    <form>
+                        <h1 style="font-size: 30px;"> 管理员帐号注册 </h1>
+                        <p>
+                            <label for="register_username" class="uname" >username</label>
+                            <input id="register_username"  type="text" placeholder="输入警员识别码" />
+                        </p>
+
+                        <p>
+                            <label for="register_password" class="youpasswd" > password </label>
+                            <input id="register_password"  type="password" placeholder="输入密码"/>
+                        </p>
+                        <p>
+                            <label for="pass_confirm" class="youpasswd" >Please confirm your password </label>
+                            <input id="pass_confirm"  type="password" placeholder="再次确认密码"/>
+                        </p>
+                        <p>
+                            <label for="Adress" class="uname" >Credential</label>
+                            <input id="Adress" type="text" placeholder="上传凭证" />
+                        </p>
+                        <p class="signin button">
+                            <input type="submit" value="Sign up" onclick="register_submit()"/>
+                        </p>
+                        <p class="change_link">
+                            Already a member ?
+                            <a href="#tologin" class="to_register"> Go and log in </a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
