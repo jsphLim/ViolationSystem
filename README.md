@@ -24,15 +24,25 @@ sudo apt-get install ethereum
 3.初始化以太坊
 
 (1)创建工作目录
+
 (2)在工作目录下配置创世快 genesis.json 
+
 (3)执行geth init genesis.json进行初始化
+
 (4)启动以太坊 geth --rpc --rpcapi personal,db,eth,net,web3 --networkid 666666 console
+
 (5)创建钱包 两种方式 一种是在ethereum图形界面中创建 一种是通过geth执行 personal.newAccount()创建
+
 (6)开始挖矿 miner.start(1) //启用一个线程挖矿 否则是多线程
+
 (7)停止挖矿
 
 4.部署合约
+
 (1)合约编写IDE https://remix.ethereum.org/
+
 (2)将编写完的合约在以太坊钱包中发布(Deploy)
+
 5.java开发
+
 使用maven管理 利用web3j库进行开发 
