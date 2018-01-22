@@ -1,13 +1,20 @@
 # 基于以太坊的车辆违章记录系统
 
 1.开发环境:
+
 (1)Intellij Idea 2017
+
 (2)Geth1.7.3
+
 (3)Ethereum0.9.3
+
 (4)Ubuntu16.04
 
 2.准备工作
-(1)安装Ethereum钱包  https://www.ethereum.org/
+
+(1)安装Ethereum钱包 
+
+https://www.ethereum.org/
 
 (2) geth安装 
 
