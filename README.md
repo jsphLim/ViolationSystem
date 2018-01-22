@@ -1,6 +1,6 @@
 # 基于以太坊的车辆违章记录系统
 
-#1.开发环境:
+# 1.开发环境:
 
 (1)Intellij Idea 2017
 
@@ -10,7 +10,7 @@
 
 (4)Ubuntu16.04
 
-#2.准备工作
+# 2.准备工作
 
 (1)安装Ethereum钱包 
 
@@ -28,7 +28,7 @@ sudo apt-get install ethereum
 
 安装完成后执行 geth help 查看geth的用法。
 
-#3.初始化以太坊
+# 3.初始化以太坊
 
 (1)创建工作目录
 
@@ -44,12 +44,12 @@ sudo apt-get install ethereum
 
 (7)停止挖矿
 
-#4.部署合约
+# 4.部署合约
 
 (1)合约编写IDE https://remix.ethereum.org/
 
 (2)将编写完的合约在以太坊钱包中发布(Deploy)
 
-#5.java开发
+# 5.java开发
 
 使用maven管理 利用web3j库进行开发 
