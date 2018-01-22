@@ -50,8 +50,38 @@ sudo apt-get install ethereum
 
 (1)合约编写IDE https://remix.ethereum.org/
 
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/contract.png)
+
 (2)将编写完的合约在以太坊钱包中发布(Deploy)
+
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/deploy.png)
 
 # 5.java开发
 
 使用maven管理 利用web3j库进行开发 
+
+# 6.项目演示
+
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/login.png)
+
+登录界面
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/register.png)
+
+注册界面
+
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/add.png)
+
+管理员添加违法记录
+
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/search.png)
+
+用户搜索自己的违法记录
+
+![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/searchResult.png)
+
+显示用户的违法记录
+
+本项目中 普通的用户无法进行注册和登录 只有查询功能 只有警署成员与权利增添违法记录 
+
+本项目仅为以太坊的开发学习项目。
+
