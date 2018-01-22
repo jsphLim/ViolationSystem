@@ -8,14 +8,21 @@
 
 2.准备工作
 (1)安装Ethereum钱包  https://www.ethereum.org/
+
 (2) geth安装 
+
 Ubuntu用户可以选择在线安装的方式，在终端中依次执行以下命令即可：
+
 sudo add-apt-repository -y ppa:ethereum/ethereum
+
 sudo apt-get update
+
 sudo apt-get install ethereum
+
 安装完成后执行 geth help 查看geth的用法。
 
 3.初始化以太坊
+
 (1)创建工作目录
 (2)在工作目录下配置创世快 genesis.json 
 (3)执行geth init genesis.json进行初始化
