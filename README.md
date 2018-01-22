@@ -64,22 +64,17 @@ sudo apt-get install ethereum
 
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/login.png)
 
-登录界面
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/register.png)
 
-注册界面
 
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/add.png)
 
-管理员添加违法记录
 
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/search.png)
 
-用户搜索自己的违法记录
 
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/searchResult.png)
 
-显示用户的违法记录
 
 本项目中 普通的用户无法进行注册和登录 只有查询功能 只有警署成员与权利增添违法记录 
 
