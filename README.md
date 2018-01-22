@@ -76,7 +76,7 @@ sudo apt-get install ethereum
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/searchResult.png)
 
 
-本项目中 普通的用户无法进行注册和登录 只有查询功能 只有警署成员与权利增添违法记录 
+本项目中 普通的用户无法进行注册和登录 只有查询功能 只有警察有权添加车辆违章记录
 
 本项目仅为以太坊的开发学习项目。
 
