@@ -42,6 +42,8 @@ sudo apt-get install ethereum
 
 (6)开始挖矿 miner.start(1) //启用一个线程挖矿 否则是多线程
 
+
+
 (7)停止挖矿
 
 # 4.部署合约
