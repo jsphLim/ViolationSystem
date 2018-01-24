@@ -51,6 +51,8 @@ sudo apt-get install ethereum
 
 安装完成后执行 geth help 查看geth的用法。
 
+windows用户直接到官网下载就行
+
 # 3.初始化以太坊
 
 (1)创建工作目录
