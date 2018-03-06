@@ -39,12 +39,14 @@ https://www.ethereum.org/
 (2) geth安装 
 
 Ubuntu用户可以选择在线安装的方式，在终端中依次执行以下命令即可：
+```
 
 sudo add-apt-repository -y ppa:ethereum/ethereum
 
 sudo apt-get update
 
 sudo apt-get install ethereum
+```
 
 安装完成后执行 geth help 查看geth的用法。
 
@@ -56,14 +58,23 @@ windows用户直接到官网下载就行
 
 (2)在工作目录下配置创世快 genesis.json 
 
-(3)执行geth init genesis.json进行初始化
+(3)初始化创世块
+```
+geth init genesis.json
 
-(4)启动以太坊 geth --rpc --rpcapi personal,db,eth,net,web3 --networkid 666666 console
+```
+(4)启动以太坊 
+```
+geth --rpc --rpcapi personal,db,eth,net,web3 --networkid 666666 console
 
+```
 (5)创建钱包 两种方式 一种是在ethereum图形界面中创建 一种是通过geth执行 personal.newAccount()创建
 
-(6)开始挖矿 miner.start(1) //启用一个线程挖矿 否则是多线程
+(6)开始挖矿 
+```
+miner.start(1) //启用一个线程挖矿 否则是多线程
 
+```
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/miner.png)
 
 (7)停止挖矿
@@ -81,6 +92,14 @@ windows用户直接到官网下载就行
 # 5.java开发
 
 使用maven管理 利用web3j库进行开发 
+```
+<dependency>
+      <groupId>org.web3j</groupId>
+      <artifactId>core</artifactId>
+      <version>3.2.0</version>
+</dependency>
+```
+
 
 # 6.项目演示
 
