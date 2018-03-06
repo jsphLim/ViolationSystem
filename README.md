@@ -101,7 +101,5 @@ windows用户直接到官网下载就行
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/searchResult.png)
 
 
-本项目中 普通的用户无法进行注册和登录 只有查询功能 只有警察有权添加车辆违章记录
-
-本项目仅为以太坊的开发学习项目。
+本项目为初版，仅为以太坊的开发学习项目,部分功能未完整，完整版暂不公布。
 
