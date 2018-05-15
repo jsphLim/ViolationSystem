@@ -9,7 +9,7 @@ http://blog.csdn.net/sportshark/article/details/52351415
 
 部署中需要注意一些问题 首先是config.properties文件 其中需要将钱包地址更改为你自己的钱包地址 否则会报FileNotFound的错误
 
-其次 合约的部署需要在自己的电脑上进行部署(### 注意先启动挖矿(geth)才能部署) 不能直接用我的合约地址 也不能直接在https://remix.ethereum.org/  上面部署
+其次 合约的部署需要在自己的电脑上进行部署(**注意先启动挖矿(geth)才能部署**) 不能直接用我的合约地址 也不能直接在https://remix.ethereum.org/  上面部署
 
 否则会出现空指针的错误 可以先在MainTest文件中进行调试  项目运行全程都必须进行挖矿来达成共识 
 
