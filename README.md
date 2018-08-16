@@ -115,5 +115,5 @@ miner.start(1) //启用一个线程挖矿 否则是多线程
 ![Image text](https://raw.githubusercontent.com/jsphLim/ViolationManagement/master/.idea/searchResult.png)
 
 
-本项目为初版，仅为以太坊的开发学习项目,部分功能未完整，完整版暂不公布。
+本项目仅为以太坊的开发学习项目,是我刚学java的时候写的，一些地方写得不漂亮还望谅解。
 
