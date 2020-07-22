@@ -1,10 +1,10 @@
 
-
 ## 写在前面
+项目开发于2017年10月。年代比较久远了，运行时请注意合约与web3j的版本问题。
 
 如果你对以太坊的部署不了解的话 可以到李赫先生的博客先进行学习
 
-http://blog.csdn.net/sportshark/article/details/52351415
+[!url]http://blog.csdn.net/sportshark/article/details/52351415
 
 
 部署中需要注意一些问题 首先是config.properties文件 其中需要将钱包地址更改为你自己的钱包地址 否则会报FileNotFound的错误
